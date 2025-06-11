@@ -1,7 +1,10 @@
-.App {
+.app {
   text-align: center;
+  display:flex;
+  flex-direction: row;
+  height:100vh;
+  font-family: 'Segoe UI', sans-serif;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,12 +30,40 @@
 .App-link {
   color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-content{
+  flex:1;
+}
+@media(max-width: 768px)
+{
+  .app{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+}
+.profile-name-image-container{
+  display:flex;
+  /* background-color: #E1F0DA; */
+}
+.link-name {
+  display:flex;
+  flex-direction: column;
+  flex-grow:1;
+}
+@media(max-width: 540px)
+{
+  .profile-name-image-container{
+    flex-direction: column;
   }
+}
+.decor-horizontal-line{
+  margin:0px 200px;
+  width:200px;
+  height:2px;
+  background-color: beige;
+}
+.skills{
+  display:flex;
+  flex-direction:row;
+  flex-grow:1;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }

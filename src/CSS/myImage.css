@@ -1,0 +1,27 @@
+.myimage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  display:inline-flex;
+  border:2px solid #D4E7C5;
+}
+
+.myimageact {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
+}
+.external-myimage{
+  margin-top:5px;
+  margin-left:5px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  display:inline-flex;
+  background-color: #1A4D2E;
+  justify-content: center;
+  align-items: center;
+}
